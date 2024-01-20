@@ -3,13 +3,23 @@
 Este proyecto descarga videos de calidad de la plataforma youtube de manera rapida... Posteriormente se quiere implementar para las demas plataformas.
 ## Instalación
 
+1. Crea y activa un entorno virtual (asegúrate de tener `virtualenv` instalado):
 
-1. Instala las dependencias:
+    ```bash
+    # Instala virtualenv si aún no lo tienes
+    pip install virtualenv
+    virtualenv venv
+    source venv/bin/activate  # Para sistemas basados en Unix
+    # o
+    .\venv\Scripts\activate  # Para sistemas basados en Windows
+    ```
+
+2. Instala las dependencias:
 
     ```bash
     pip install -r requirements.txt
     ```
-2. Aplica las migraciones:
+3. Aplica las migraciones:
 
     ```bash
     python manage.py migrate
