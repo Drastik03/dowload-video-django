@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+</head>
+<body>
+    <header class="head" id="containt">
+        <nav class="nav-bar">
+            <div class="logo-head">
+                <img id="img-yt" src="{% static 'img/youtube.png' %}">
+                <span>Dowloader VideoYT</span>
+
+            </div>
+            <ul class="ul-list">
+                <li id="list">
+                    <a href="/">Home</a>
+                </li>
+                <li id="list">
+                    <a href="/about">About</a>
+                </li>
+                {% if user.is_authenticated %}
+                <li id="list">
+                    <a href="/video">Videos</a>
+                </li>
+                <li id="list">
+                    <a href="/logout">Logout</a>
+                </li>
+                {% else %}
+                <li id="list">
+                    <a href="/sign_up">Sign up</a>
+                </li>
+                <li id="list">
+                    <a href="/sign_in">Sign in</a>
+                </li>
+                {% endif %}
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+
+    
+    {% endblock %}
+</body>
+</html>

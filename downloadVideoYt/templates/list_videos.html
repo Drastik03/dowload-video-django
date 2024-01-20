@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>List videos</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    {% extends 'head.html' %}
+    {% block content %}
+    <div class="card">
+        <div class="card-body card-info">
+          <h1>List Videos</h1>
+          {% for video in videos %}
+            <div class="card">
+              <div class="card-body">
+                <h5 class="card-title">{{video.title}}</h5>
+                <a class="card-text" href="{{ video.videoLink }}">Ver video</a>
+                <p class="card-text">{{video.download_date}}</p>
+                <p>{{video.user.username}}</p>
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      </div>
+    {% endblock %}
+
+</body>
+</html>

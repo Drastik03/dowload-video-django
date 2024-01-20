@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background-color: #000000;
+}
+
+.head {
+    background-color: #000000;
+    padding: 10px;
+    text-align: center; 
+  }
+  
+  .nav-bar {
+    display: flex; 
+    list-style: none;
+    margin: 0 auto;
+    justify-content: end;
+
+  }
+  
+  .logo-title{
+    display: flex;
+    align-items: start;
+    justify-content: left;
+  }
+
+  .logo-title a{
+    margin-left: center;
+  }
+
+  .ul-list {
+    padding: 0; 
+    margin: 0;
+  }
+  .ul-list li {
+    display: inline-block;
+    margin: 0 10px; 
+    padding: 5px 10px; 
+    border-radius: 3px; 
+    background-color: #464646a5;
+    transition: background-color .5s cubic-bezier(.05,0,0,1);
+    border-radius: 8px;
+  }
+  
+  .ul-list li a {
+    text-decoration: none; 
+    color: #f6f6f6; 
+    font-weight: bold; 
+    transition: all 0.3s ease-in-out; 
+  }
+  
+  .ul-list li:hover {
+    background-color: #979797b6; 
+  }
+
+.container{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.text-page{
+    width: 50%;
+    height: 5em;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.text-page h1, h2{
+    text-align: center;
+    color: white;
+}
+
+h1, h2{
+    font-size: 25px;
+}
+
+.icon-logo{
+    width: 400px;
+    height: 150px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#icon-img{
+    width: 300px;
+    height: 150px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+.logo-head img{
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  left: 15px;
+  border-radius: 50%;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  object-fit: cover;
+}
+
+.logo-head span {
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  left: 55px;
+  font-size: 18px; 
+  margin-left: 5px;
+  padding-top: 7px;
+}
+
+@media (max-width: 768px) {
+  .logo-head span {
+    display: none;
+  }
+}
+
+.form-controll{
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.805);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.688);
+}
+
+.form-controll h1{
+  text-align: center;
+  color: white;
+}
+.form-controll .container-input{
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; 
+  align-items: stretch;
+}
+
+.form-controll .container-input label {
+  margin-bottom: 5px; /* Agrega espacio debajo de la etiqueta */
+  font-weight: bold; /* Hace la etiqueta más destacada */
+  color: white;
+}
+
+.form-controll .container-input input {
+  background-color: transparent;
+  border: 1px solid #ffffff; 
+  color: white;
+  border-radius: 6px; 
+  padding: 10px; 
+  font-size: 16px; 
+  margin-bottom: 5px;
+}
+
+
+.form-controll button {
+  border: 1px solid #202020; 
+  color: white;
+  margin-top: 20px;
+  border-radius: 6px; 
+  background-color: rgba(255, 8, 8, 0.951);
+  padding: 10px; 
+  font-size: 16px; 
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.fondo-sign{
+  background-image: url("../img/netflix.jpg");
+  opacity: 1;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.create-video {
+  width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+
+.btn-download {
+  width: 300px;
+  border: 1px solid #202020; 
+  color: white;
+  margin-top: 20px;
+  border-radius: 6px; 
+  background-color: rgba(255, 8, 8, 0.951);
+  padding: 10px; 
+  font-size: 16px; 
+  margin-bottom: 4px;
+  cursor: pointer;
+}
+
+.btn-download:hover {
+  background-color: #ab0f0f;
+}
+
+
+/* Estilos básicos de la tarjeta */
+.card {
+  width: 350px;
+  max-width: 80%;
+  margin: 0 auto 15px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+  padding: 15px;
+}
+
+.card-info {
+  background-color: #f8f9fa;
+  border: 1px solid #d4d6d6;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.card-text {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #666;
+}
+
+.card-text p {
+  margin-bottom: 5px;
+}
+
+.card-info a {
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card-info a:hover {
+  text-decoration: underline;
+}

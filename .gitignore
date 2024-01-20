@@ -1,0 +1,12 @@
+# Virtual environment
+venv/
+# config .vscode
+.vscode/
+# Archivos de caché
+__pycache__/
+# Archivos de base de datos
+db.sqlite3
+# Archivos de compilación de Python
+*.pyc
+*.pyo
+*.pyd
